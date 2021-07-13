@@ -1,0 +1,377 @@
+:root {
+    --brown: #6b1737;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body {
+    background-color: #ffcc2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div {
+    width: 300px;
+    height: 200px;
+}
+.container {
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    position: relative;
+    margin-top: 50px;
+}
+.square1 {
+    background-color: var(--brown);
+    width: 60%;
+    height: 50%;
+    border: solid 6px #fff;
+    position: absolute;
+    left: 20%;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    overflow: hidden;
+}
+.wardy {
+    background-color: #ff5d5d;
+    width: 200px;
+    height: 88%;
+    position: absolute;
+    right: 5%;
+    top: 6%;
+    border-radius: 15px;
+    z-index: 10;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.wardy::before {
+    content: "";
+    background-color: #fed6d5;
+    position: absolute;
+    top: -15px;
+    height: 50px;
+    width: 100%;
+    transform: skewY(10deg);
+    -webkit-transform: skewY(10deg);
+    -moz-transform: skewY(10deg);
+    -ms-transform: skewY(10deg);
+    -o-transform: skewY(10deg);
+}
+.wardy::after {
+    content: "";
+    background-color: #e93751;
+    position: absolute;
+    bottom: -15px;
+    height: 85px;
+    width: 100%;
+    transform: skewY(7deg);
+    -webkit-transform: skewY(7deg);
+    -moz-transform: skewY(7deg);
+    -ms-transform: skewY(7deg);
+    -o-transform: skewY(7deg);
+}
+.wardy span {
+    width: 65%;
+    height: 6px;
+    background-color: var(--brown);
+    margin-bottom: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.squar-white1 {
+    background-color: #fff;
+    height: 90%;
+    width: 65%;
+    position: absolute;
+    top: 5%;
+    border: 5px solid var(--brown);
+    left: 3.5%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    z-index: 20;
+}
+.squar-brown2 {
+    z-index: 30;
+    background-color: var(--brown);
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    width: 56%;
+    height: 60%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.labany {
+    background-color: #00d2be;
+    z-index: 40;
+    position: absolute;
+    left: 14%;
+    top: 20.3%;
+    width: 50%;
+    border-radius: 0 0 14px 0;
+    -webkit-border-radius: 0 0 14px 0;
+    -moz-border-radius: 0 0 14px 0;
+    -ms-border-radius: 0 0 14px 0;
+    -o-border-radius: 0 0 14px 0;
+}
+.buttons {
+    z-index: 50;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    height: 50px;
+    width: 53%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttons span:first-child{
+    background-color: var(--brown);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.buttons span {
+    background-color: var(--brown);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.dahr {
+    background-color: var(--brown);
+    position: absolute;
+    z-index: -1;
+    left: 79%;
+    height: 290px;
+    top: 7%;
+    width: 11%;
+    border: solid 6px #fff;
+    border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    -moz-border-radius: 0 100px 100px 0;
+    -ms-border-radius: 0 100px 100px 0;
+    -o-border-radius: 0 100px 100px 0;
+}
+.wardy2 {
+    background-color: #ff5d5d;
+    position: absolute;
+    z-index: 0;
+    left: 80%;
+    height: 250px;
+    top: 9.4%;
+    width: 8%;
+    border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    -moz-border-radius: 0 100px 100px 0;
+    -ms-border-radius: 0 100px 100px 0;
+    -o-border-radius: 0 100px 100px 0;
+}
+.wardy2::before {
+    content: "";
+    background-color: #fed6d5;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    transform: skewY(11deg);
+    -webkit-transform: skewY(11deg);
+    -moz-transform: skewY(11deg);
+    -ms-transform: skewY(11deg);
+    -o-transform: skewY(11deg);
+}
+.wardy2::after {
+    content: "";
+    background-color: #e93751;
+    position: absolute;
+    bottom: -15px;
+    height: 85px;
+    width: 100%;
+    transform: skewY(-9deg);
+    -webkit-transform: skewY(-9deg);
+    -moz-transform: skewY(-9deg);
+    -ms-transform: skewY(-9deg);
+    -o-transform: skewY(-9deg);
+}
+.square2 {
+    z-index: 70;
+    position: absolute;
+    top: 50%;
+    width: 60%;
+    left: 20%;
+}
+.top1 {
+    background-color: #fed6d5;
+    position: absolute;
+    top: -5px;
+    width: 60%;
+    left: 20%;
+    border: solid var(--brown) 5px;
+    height: 40px;
+    z-index: 100;
+}
+.top1::after {
+    content: "";
+    background-color: #ecadac;
+    position: absolute;
+    top: -5px;
+    width: 40%;
+    left: 60%;
+    border: solid var(--brown) 5px;
+    height: 40px;
+}
+.contain {
+    background-color: var(--brown);
+    position: absolute;
+    top: 14%;
+    width: 90%;
+    left: 5%;
+    border: solid #fff 6px;
+    border-bottom: none;
+    height: 110px;
+    z-index: 90;
+    border-radius: 30px 30px 0 0;
+    -webkit-border-radius: 30px 30px 0 0;
+    -moz-border-radius: 30px 30px 0 0;
+    -ms-border-radius: 30px 30px 0 0;
+    -o-border-radius: 30px 30px 0 0;
+}
+.contain .squar-white1 {
+    left: 1.5%;
+    width: 75%;
+    border-radius: 20px 30px 8px 8px;
+    -webkit-border-radius: 20px 30px 8px 8px;
+    -moz-border-radius: 20px 30px 8px 8px;
+    -ms-border-radius: 20px 30px 8px 8px;
+    -o-border-radius: 20px 30px 8px 8px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.contain .wardy {
+    background-color: #ff5d5d;
+    width: 200px;
+    height: 81%;
+    position: absolute;
+    right: 2.5%;
+    top: 8.7%;
+    border-radius: 0 15px 0 0;
+    -webkit-border-radius: 0 15px 0 0;
+    -moz-border-radius: 0 15px 0 0;
+    -ms-border-radius: 0 15px 0 0;
+    -o-border-radius: 0 15px 0 0;
+}
+.contain .wardy::before {
+    content: "";
+    background-color: #fed6d5;
+    position: absolute;
+    top: 0;
+    height: 33.3333%;
+    width: 100%;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+.contain .wardy::after {
+    content: "";
+    background-color: #e93751;
+    position: absolute;
+    bottom: 0;
+    height: 33.3333%;
+    width: 100%;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+.contain .squar-white1 div {
+    height: 100%;
+    width: auto;
+}
+.contain .squar-white1 div .brown-last {
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    top: 30%;
+    background-color: var(--brown);
+    z-index: 110;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.contain .squar-white1 div .wardy-last {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    background-color: #fed6d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 4.5px var(--brown);
+    border-left-width: 20px;
+    z-index: 110;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.contain .squar-white1 div .wardy-last span {
+    width: 70%;
+    height: 3px;
+    background-color: var(--brown);
+    margin-bottom: 3px;
+}
+.flowr {
+    background-color: var(--brown);
+    z-index: 70;
+    position: absolute;
+    top: 66.6%;
+    width: 60%;
+    left: 20%;
+    height: 5%;
+    border: solid 5px #fff;
+    z-index: 60;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
